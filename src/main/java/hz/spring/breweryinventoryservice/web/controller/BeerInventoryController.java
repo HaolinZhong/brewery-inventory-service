@@ -1,5 +1,6 @@
 package hz.spring.breweryinventoryservice.web.controller;
 
+import hz.spring.breweryinventoryservice.domain.BeerInventory;
 import hz.spring.breweryinventoryservice.repository.BeerInventoryRepository;
 import hz.spring.breweryinventoryservice.web.mapper.BeerInventoryMapper;
 import hz.spring.breweryinventoryservice.web.model.BeerInventoryDTO;
@@ -23,7 +24,7 @@ public class BeerInventoryController {
 
     @GetMapping("api/v1/beer/{beerId}/inventory")
     List<BeerInventoryDTO> listBeersById(@PathVariable UUID beerId){
-        log.debug("Finding Inventory for beerId:" + beerId);
+//        log.debug("Finding Inventory for beerId:" + beerId);
 
         return beerInventoryRepository.findAllByBeerId(beerId)
                 .stream()
