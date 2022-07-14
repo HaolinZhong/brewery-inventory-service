@@ -1,4 +1,4 @@
-package hz.spring.breweryinventoryservice.web.model;
+package hz.spring.common.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

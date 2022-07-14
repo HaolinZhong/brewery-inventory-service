@@ -1,12 +1,10 @@
 package hz.spring.breweryinventoryservice.web.controller;
 
-import hz.spring.breweryinventoryservice.domain.BeerInventory;
 import hz.spring.breweryinventoryservice.repository.BeerInventoryRepository;
 import hz.spring.breweryinventoryservice.web.mapper.BeerInventoryMapper;
-import hz.spring.breweryinventoryservice.web.model.BeerInventoryDTO;
+import hz.spring.common.model.BeerInventoryDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
