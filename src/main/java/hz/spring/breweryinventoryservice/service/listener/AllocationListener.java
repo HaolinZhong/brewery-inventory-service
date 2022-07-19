@@ -1,6 +1,7 @@
-package hz.spring.breweryinventoryservice.service;
+package hz.spring.breweryinventoryservice.service.listener;
 
 import hz.spring.breweryinventoryservice.config.JmsConfig;
+import hz.spring.breweryinventoryservice.service.AllocationService;
 import hz.spring.common.event.AllocateBeerOrderRequest;
 import hz.spring.common.event.AllocateBeerOrderResult;
 import lombok.RequiredArgsConstructor;

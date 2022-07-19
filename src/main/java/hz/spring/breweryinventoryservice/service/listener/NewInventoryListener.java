@@ -1,4 +1,4 @@
-package hz.spring.breweryinventoryservice.service;
+package hz.spring.breweryinventoryservice.service.listener;
 
 import hz.spring.breweryinventoryservice.config.JmsConfig;
 import hz.spring.breweryinventoryservice.domain.BeerInventory;
