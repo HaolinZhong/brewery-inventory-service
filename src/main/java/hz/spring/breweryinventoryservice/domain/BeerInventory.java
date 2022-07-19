@@ -4,7 +4,9 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
+import org.springframework.data.annotation.Id;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,9 +28,12 @@ public class BeerInventory extends BaseEntity {
         this.quantityOnHand = quantityOnHand;
     }
 
-    @Type(type = "org.hibernate.type.UUIDCharType")
-    @Column(length = 36, columnDefinition = "varchar(36)", updatable = false, nullable = false)
+
+    @Type(type="org.hibernate.type.UUIDCharType")
+    @Column(length=36, columnDefinition = "varchar(36)", updatable = false, nullable = false)
     private UUID beerId;
+
     private String upc;
+
     private Integer quantityOnHand = 0;
 }
